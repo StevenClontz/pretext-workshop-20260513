@@ -25,7 +25,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Read the syllabus.    Wednesday 8\/24  Learned what is.    Friday 8\/26  Learned what is.   "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Read the syllabus.    Wednesday 8\/24  Learned what is.    Friday 8\/26  Learned what is.   A picture of a circle.     A Sage implicitly defined 3D surface       "
+},
+{
+  "id": "figure-sage-implicit-surface",
+  "level": "2",
+  "url": "notes-week-01.html#figure-sage-implicit-surface",
+  "type": "Figure",
+  "number": "1",
+  "title": "",
+  "body": " A Sage implicitly defined 3D surface     "
 },
 {
   "id": "notes-week-02",
