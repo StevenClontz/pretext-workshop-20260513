@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26     "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Read the syllabus.    Wednesday 8\/24  Learned what is.    Friday 8\/26  Learned what is.   "
 },
 {
   "id": "notes-week-02",
