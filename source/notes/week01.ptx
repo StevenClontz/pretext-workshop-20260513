@@ -34,5 +34,25 @@
     <p>
       Learned what <m>2+3</m> is.
     </p>
+    <image>
+      <shortdescription>A picture of a circle.</shortdescription>
+      <latex-image>
+        \begin{tikzpicture}
+\draw (0,0) circle (1cm);
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+            <figure xml:id="figure-sage-implicit-surface">
+          <caption>A Sage implicitly defined 3D surface</caption>
+          <image xml:id="sageplot-implicit-surface" width="80%" margins="15% 5%">
+<sageplot variant="3d" aspect="1.0">
+var('x y z')
+T = RDF(golden_ratio)
+p = 2 - (cos(x + T*y) + cos(x - T*y) + cos(y + T*z) + cos(y - T*z) + cos(z - T*x) + cos(z + T*x))
+r = 4.77
+implicit_plot3d(p, (x, -r, r), (y, -r, r), (z, -r, r), plot_points=50, frame=False)
+</sageplot>
+          </image>
+        </figure>
   </subsection>
 </section>
