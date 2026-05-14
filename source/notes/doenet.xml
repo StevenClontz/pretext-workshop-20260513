@@ -1,0 +1,45 @@
+
+<section>
+
+  <part>
+    <title>Specifying an interval</title>
+
+    <answer><label>1+1=</label>2</answer>
+
+    <graph aspectRatio="10" displayYAxis="false" fixAxes showBorder="false">
+      <shortDescription>
+        A graph of a line segment on the x-axis from the point -2 to the point 5.
+        At the point -2 is an open circle.
+        At the point 5 is a closed circle.
+      </shortDescription>
+      <xLabel>x</xLabel>
+        <lineSegment fixed endpoints="$leftPt $rightPt" />
+      <endpoint name="leftPt" open>(-2,0)<constrainTo><line>y=0</line></constrainTo><constrainToGrid/></endpoint>
+      <endpoint name="rightPt" open="false">(5,0)<constrainTo><line>y=0</line></constrainTo><constrainToGrid/></endpoint>
+    </graph>
+
+    <p>What is the interval shown above?
+      <answer>
+        <mathInput name="interval">
+          <shortDescription>Enter interval</shortDescription>
+        </mathInput>
+        <award><when>
+          <subsetOfReals>$interval</subsetOfReals> =
+          <subsetOfReals>($leftPt.x,$rightPt.x]</subsetOfReals>
+        </when></award>
+      </answer>
+    </p>
+
+    <p>The above answer will accept different ways to express the interval, including:
+      <ul>
+        <li><m>($leftPt.x,$rightPt.x]</m></li>
+        <li><m>$leftPt.x < x \le $rightPt.x</m></li>
+        <li><m>x \in ($leftPt.x,$rightPt.x]</m></li>
+        
+      </ul>
+    </p>
+
+  </part>
+
+  
+</section>

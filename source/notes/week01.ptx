@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-01">
+<section xml:id="notes-week-01" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Week 1</title>
 
   <introduction>
@@ -35,6 +35,22 @@
       Learned what <m>2+3</m> is.
     </p>
     <image>
+      <shortdescription>trapezoid</shortdescription>
+      <latex-image>
+        \begin{tikzpicture}
+          \draw (0,0) -- (3,0) -- (2,1) -- (1,1) -- cycle;
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+    <image>
+      <shortdescription>rectangle</shortdescription>
+      <latex-image>
+        \begin{tikzpicture}
+\draw (0,0) rectangle (2,1);
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+    <image>
       <shortdescription>A picture of a circle.</shortdescription>
       <latex-image>
         \begin{tikzpicture}
@@ -54,5 +70,58 @@ implicit_plot3d(p, (x, -r, r), (y, -r, r), (z, -r, r), plot_points=50, frame=Fal
 </sageplot>
           </image>
         </figure>
+<figure xml:id="figure-phet-fourier">
+  <caption>Fourier: Making Waves <c>iframe</c></caption>
+    <interactive label="GT1-interactive-transformation" platform="doenetml" width="90%" aspect="3:4">
+      <slate surface="doenetml">
+        <xi:include parse="text" href="doenet.xml"/>
+      </slate>
+      <description>
+        <p>Interactive applet allowing users to drag two vectors and geometrically observe the result of applying
+          the linear transformation defined mapping the standard basis vectors to those two vectors.</p>
+      </description>
+    </interactive></figure>
+<image width="80%">
+  <prefigure xmlns="https://prefigure.org" label="asdf">
+   <diagram dimensions="(300,300)" margins="5">
+      <definition>x1=1</definition>
+      <definition>x2=4</definition>
+      <definition>y1=1</definition>
+      <definition>y2=5</definition>
+      <definition>p=(x1,y1)</definition>
+      <definition>q=(x2,y2)</definition>
+      <definition>r=(x2,y1)</definition>
+      <coordinates bbox="(-1,-1,6,6)">
+        <axes decorations="no" xlabel="x" ylabel="y"/>
+        <line endpoints="(p, q)" stroke="gray" infinite="yes"/>
+        <group at="triangle" outline="none">
+          <polygon points="(p,r,q,p)" stroke="red"/>
+          <angle-marker at="slopeAngle" points="(r,p,q)" stroke="black">
+            <m>\theta</m>
+          </angle-marker>
+        </group>
+        <label anchor="(1,5)" alignment="south">
+          Slope!
+        </label>
+        <label anchor="((x1+x2)/2,y1)" alignment="south">
+          <m>\Delta x</m>
+        </label>
+        <label anchor="(x2,(y1+y2)/2)" alignment="east">
+          <m>\Delta y</m>
+        </label>
+        <point p="p" fill="green" alignment="se"><m>P</m></point>
+        <point p="q" fill="green" alignment="se"><m>Q</m></point>
+        <point p="r" fill="green" alignment="se"><m>R</m></point>
+      </coordinates>
+
+      <annotations>
+        <annotation ref="triangle"
+          text="Illustration of the slope of a line in terms of delta x and delta y">
+          <annotation ref="slopeAngle" text="special angle"/>
+        </annotation>
+      </annotations>
+    </diagram>
+  </prefigure>
+</image>
   </subsection>
 </section>
