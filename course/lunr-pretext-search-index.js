@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Read the syllabus.    Wednesday 8\/24  Learned what is.    Friday 8\/26  Learned what is.   A picture of a circle.     A Sage implicitly defined 3D surface       "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22  Read the syllabus.    Wednesday 8\/24  Learned what is.    Friday 8\/26  Learned what is.   trapezoid     rectangle     A picture of a circle.     A Sage implicitly defined 3D surface       Fourier: Making Waves iframe      x1=1  x2=4  y1=1  y2=5  p=(x1,y1)  q=(x2,y2)  r=(x2,y1)        \\theta    Slope!   \\Delta x    \\Delta y   P  Q  R            "
 },
 {
   "id": "figure-sage-implicit-surface",
@@ -35,6 +35,15 @@ var ptx_lunr_docs = [
   "number": "1",
   "title": "",
   "body": " A Sage implicitly defined 3D surface     "
+},
+{
+  "id": "figure-phet-fourier",
+  "level": "2",
+  "url": "notes-week-01.html#figure-phet-fourier",
+  "type": "Figure",
+  "number": "2",
+  "title": "",
+  "body": " Fourier: Making Waves iframe  "
 },
 {
   "id": "notes-week-02",
